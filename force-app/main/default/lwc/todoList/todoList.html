@@ -1,0 +1,32 @@
+<template>
+    <lightning-card title="To-Do Lists">
+        <div class="slds-p-around_medium">
+   
+    <template lwc:if={isToDoEmpty}>
+        <template for:each={toDoList} for:item="item">
+            <div key={item.No} class="slds-grid">
+                <div class="slds-p-around_medium slds-col whenTask">
+                    {item.taskName}
+                </div>
+                <div class="slds-p-around_medium  slds-col whenTask">
+                <lightning-button-icon variant="container" icon-name="utility:delete" data-id={item.No} onclick={handleTaskUpdate}></lightning-button-icon>
+                </div>
+            </div>
+
+        </template>
+
+    </template>
+    <template lwc:else>
+        <div class="noTask slds-align_absolute-center">
+            You Have No Items in ToDo lists Today
+        </div>
+        
+    </template>
+    
+    <lightning-input label="Enter NewTask" value={newTask} class="slds-border_top slds-m-around_medium" onchange={handleChangeTask}></lightning-input>
+    <div class="slds-p-around_medium slds-align_absolute-center">
+    <lightning-button variant="brand" label="Add" onclick={handleAdd}></lightning-button>
+    </div>
+    </div>
+    </lightning-card>
+</template>

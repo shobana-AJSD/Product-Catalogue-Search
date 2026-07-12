@@ -1,0 +1,17 @@
+<template>
+    <div class="card">
+        <div class="progress-circle">
+            <span>Status {currentStep} of 4</span>
+        </div>
+
+        <div class="content">
+            <h2>{stepLabel}</h2>
+            <p>This is step description</p>
+
+            <div class="actions">
+                <button onclick={handlePrevious}>Previous</button>
+                <button onclick={handleNext}>Next</button>
+            </div>
+        </div>
+    </div>
+</template>

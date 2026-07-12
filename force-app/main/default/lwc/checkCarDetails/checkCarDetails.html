@@ -1,0 +1,40 @@
+<template>
+    <lightning-card title="CARS">
+        <!-- <img src={carPicture}> -->
+         <template if:true={moveNextElem}>
+                <img src={nextCarUrl}>    
+        </template> 
+        <span class="slds-text-align_center" >
+        <lightning-button label=">>" onclick={moveNext} ></lightning-button>
+        </span>
+        <template if:true={isCarDispImageOnScreen}>
+        <span class="slds-m-bottom_medium">
+        <lightning-slider
+            onchange={sliderChange}
+            value="100"
+            label="Engine Health Score"
+        ></lightning-slider>
+        </span>
+
+    <template if:true={isProgressRingStyle}>
+        <div class="slds-m-bottom_small">
+        <span class="slds-m-right_small">
+            {status}
+        </span>
+        <lightning-progress-ring
+            value={sliderValue}
+            direction={direction}
+            variant={progressRingStyle}
+            size="large"
+            
+        ></lightning-progress-ring>
+    </div>
+    <div class="slds-m-bottom_xx-large">
+       <h1> Health Score : {sliderValue} </h1>
+    </div>
+   
+    </template>
+    </template>
+
+    </lightning-card>
+</template>
