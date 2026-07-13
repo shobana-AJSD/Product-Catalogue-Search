@@ -79,10 +79,10 @@ export default class ProductPriceFilter extends LightningElement {
         product.price <= this.maxPrice
     );
 }
-    // get productsFound()
-    // {
-    //     return this.filteredProducts;
-    // }
+    get productsFound()
+    {
+        return this.filteredProducts.length>0;
+    }
 onPriceChange(event)
 {
     this.maxPrice=event.detail.value;
