@@ -1,18 +1,23 @@
-# Salesforce DX Project: Next Steps
+# Product-Catalogue-Search
+This LWC component is for debugging the issues in the LWC component using the Chrome Dev Tools
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+## Prerequisites
+- Salesforce CLI installed (`sf --version` to check)
+- VS Code with Salesforce Extension Pack (recommended)
+- Access to a Salesforce org (Dev/Sandbox/Trailhead Playground)
 
-## How Do You Plan to Deploy Your Changes?
+## Setup Steps
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+1. Clone the repo:
 
-## Configure Your Salesforce DX Project
+git clone https://github.com/shobana-AJSD/Product-Catalogue-Search.git
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+2. Change the directory 
+cd Product-Catalogue-Search
 
-## Read All About It
+3. Deploy the component and static resource to your org:
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+4. Add the component to the Home Page to see it in action.
+
+5. Start debugging the component using Chrome Dev Tools.
+
